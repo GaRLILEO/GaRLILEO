@@ -377,20 +377,6 @@
           Overall preview of GaRLILEO. The four subfigures in the upper row present the problematic situations that quadrupedal robots may encounter while performing real-world tasks, while the yellow letters specify the situations and the red words explain the substantial issues generated from them. Two boxes in the left part of the lower row summarize the major contribution and method of the GaRLIELEO, which significantly reduces odometry error, especially in the vertical direction. Two graphs in the right part of the lower row present the short experimental results, showing the accuracy of GaRLILEO in multiple sequences that include loops, sharp turns, and staircases, where most baselines fail to maintain accuracy in odometry estimation.
         </h2>
       </div>
-      <!-- <div class="item"> -->
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item"> -->
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div> -->
   </div>
 </div>
 </div>
@@ -433,6 +419,111 @@ robot odometry and SLAM.
 </section>
 <!-- End paper abstract -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/robot_system.jpg" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          SNU and RAI sensor system deployment. Both systems include the same TI-mmWave radar, Microstrain IMU, and Boston Dynamics Spot quadrupedal robot, but are attached with different extrinsics.
+      <!-- <div class="item"> -->
+        <!-- Your image here -->
+        <img src="static/images/SNU.jpg" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          SNU sensor system
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <img src="static/images/RAI.jpg" alt="Third research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         RAI sensor system
+       </h2>
+     </div> -->
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Sensors section -->
+<section class="section">
+  <div class="container is-fluid">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Sensor Specifications</h2>
+        <div class="content has-text-justified">
+          <table class="table is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Sensor</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Topic name</th>
+                <th>Frequency</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sensor Measurements -->
+              <tr>
+                <td>Legged robot</td>
+                <td>Boston Dynamics</td>
+                <td>Spot</td>
+                <td>
+                  <code>/joint_states</code><br>
+                  <code>/spot/status/feet</code>
+                </td>
+                <td>
+                  150&nbsp;Hz<br>
+                  150&nbsp;Hz
+                </td>
+                <td rowspan="3" style="vertical-align: middle;">Sensor Measurements</td>
+              </tr>
+              <tr>
+                <td>Radar</td>
+                <td>Texas Instruments</td>
+                <td>IWR1843BOOST</td>
+                <td><code>/ti_mmwave/radar_scan_pcl_0</code></td>
+                <td>20&nbsp;Hz</td>
+              </tr>
+              <tr>
+                <td>IMU</td>
+                <td>MicroStrain</td>
+                <td>3DM-GV7-AHRS</td>
+                <td><code>/imu</code></td>
+                <td>100&nbsp;Hz</td>
+              </tr>
+
+              <!-- Ground-truth Reference -->
+              <tr>
+                <td>LiDAR</td>
+                <td>Ouster</td>
+                <td>OS1-32</td>
+                <td><code>/ouster/points</code></td>
+                <td>10&nbsp;Hz</td>
+                <td rowspan="2" style="vertical-align: middle;">Ground-truth Reference</td>
+              </tr>
+              <tr>
+                <td>Laser scanner</td>
+                <td>Leica</td>
+                <td>RTC360</td>
+                <td>–</td>
+                <td>–</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <p class="has-text-centered">Any additional sensor notes can go here.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End sensors section -->
 
 
 
