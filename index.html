@@ -421,39 +421,60 @@ robot odometry and SLAM.
 </section>
 <!-- End paper abstract -->
 
+<!-- Sensor System (sectioned like "Model Graph Priors") -->
+<section class="section">
+  <div class="container is-fluid">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Sensor System</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/robot_system.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          SNU and RAI sensor system deployment. Both systems include the same TI-mmWave radar, Microstrain IMU, and Boston Dynamics Spot quadrupedal robot, but are attached with different extrinsics.
-        </h2>
+    <!-- Title -->
+    <h2 class="title is-3 has-text-centered">Sensor System</h2>
+
+    <!-- Top: SNU & RAI deployment (overall) -->
+    <div class="box" style="border-radius: 12px;">
+      <figure class="has-text-centered">
+        <img src="static/images/robot_system.jpg"
+             alt="SNU and RAI sensor system deployment"
+             style="max-width: 1200px; width: 100%; height: auto;" />
+        <figcaption class="has-text-grey" style="margin-top: .5rem;">
+          SNU and RAI sensor system deployment. Both systems use a TI mmWave radar, a MicroStrain IMU, and a Boston Dynamics Spot robot.
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Bottom: two columns (RAI / SNU side by side) -->
+    <div class="columns is-variable is-6">
+
+      <div class="column">
+        <div class="box" style="height: 100%; border-radius: 12px;">
+          <h3 class="title is-5 has-text-centered" style="margin-bottom: .75rem;">RAI Sensor System</h3>
+          <figure class="has-text-centered">
+            <img src="static/images/RAI.jpg"
+                 alt="RAI sensor system"
+                 style="max-width: 100%; height: auto;" />
+          </figure>
+          <p class="has-text-justified" style="margin-top: .75rem;">
+            TI mmWave radar and MicroStrain IMU mounted on Spot for robust indoor–outdoor operation.
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/SNU.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          SNU sensor system
-        </h2>
+
+      <div class="column">
+        <div class="box" style="height: 100%; border-radius: 12px;">
+          <h3 class="title is-5 has-text-centered" style="margin-bottom: .75rem;">SNU Sensor System</h3>
+          <figure class="has-text-centered">
+            <img src="static/images/SNU.jpg"
+                 alt="SNU sensor system"
+                 style="max-width: 100%; height: auto;" />
+          </figure>
+          <p class="has-text-justified" style="margin-top: .75rem;">
+            Same sensor stack on Spot, configured for repeatable data collection across varied terrains.
+          </p>
+        </div>
       </div>
-        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/RAI.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         RAI sensor system
-        </h2>
-      </div>
+
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
 
                     
 <!-- Sensors section -->
