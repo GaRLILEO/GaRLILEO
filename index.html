@@ -725,45 +725,39 @@ robot odometry and SLAM.
 <!-- End dataset section -->
 
 
-
-<!-- Video carousel -->
+<!-- Video carousel (manual only) -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Qualitative Comparison</h2>
+
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1"> -->
-          <!-- TODO: Add poster image for better preview -->
+        <div class="item item-video1">
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/test_atrium.mp4" type="video/mp4">
           </video>
         </div>
+
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/test_bicorridor.mp4" type="video/mp4">
           </video>
         </div>
+
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/test_bridgeloop.mp4" type="video/mp4">
           </video>
         </div>
+
         <div class="item item-video4">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/test_overpass.mp4" type="video/mp4">
           </video>
         </div>
+
         <div class="item item-video5">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/test_mocap.mp4" type="video/mp4">
           </video>
         </div>
@@ -772,6 +766,46 @@ robot odometry and SLAM.
   </div>
 </section>
 <!-- End video carousel -->
+
+<!-- bulma-carousel (만약 이미 포함되어 있으면 중복 추가 X) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/css/bulma-carousel.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 캐러셀 자동 넘김 비활성화
+    const carousels = bulmaCarousel.attach('#results-carousel', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: false,          // 마지막에서 더 넘기지 않음(필요시 true)
+      autoplay: false,      // ★ 자동 슬라이드 OFF
+      pauseOnHover: true,   // 호버 시 정지(autoplay=false지만 안전하게)
+      navigation: true,     // 좌우 화살표
+      pagination: true,     // 하단 점 표시
+      duration: 300         // 전환 애니메이션 시간(ms)
+    });
+
+    // 슬라이드 변경 시, 보이는 슬라이드 외 영상은 모두 pause
+    const carousel = carousels && carousels[0] ? carousels[0] : null;
+    if (carousel) {
+      const pauseAll = () => {
+        document.querySelectorAll('#results-carousel video').forEach(v => {
+          try { v.pause(); } catch (e) {}
+        });
+      };
+      carousel.on('before:show', pauseAll);  // 다음 슬라이드로 가기 직전에 모두 정지
+      // 초기에도 혹시 재생 중인 게 없도록 한 번 호출
+      pauseAll();
+    }
+
+    // 혹시 HTML에 data-autoplay 같은 속성이 있었다면 제거(방어코드)
+    const root = document.getElementById('results-carousel');
+    if (root) {
+      root.removeAttribute('data-autoplay');
+      root.classList.remove('is-animated'); // 일부 테마가 애니메이션으로 강제 전환 시
+    }
+  });
+</script>
 
 
 
