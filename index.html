@@ -568,6 +568,8 @@ robot odometry and SLAM.
 </section>
 <!-- End sensors section -->
 
+
+
 <!-- Radar Spec section -->
 <section class="section">
   <div class="container is-fluid">
@@ -575,40 +577,43 @@ robot odometry and SLAM.
       <div class="column is-four-fifths">
         <h2 class="title is-3">TI mmwave Radar Specification</h2>
         <div class="content has-text-justified">
-          <table class="table is-fullwidth is-bordered">
-            <thead>
-              <tr>
-                <th>Sensor Name</th>
-                <th>Framerate</th>
-                <th>Wave frequency</th>
-                <th>Waveform</th>
-                <th>TX antennas</th>
-                <th>RX antennas</th>
-                <th>Range resolution</th>
-                <th>Max range</th>
-                <th>Doppler velocity resolution</th>
-                <th>Max Doppler velocity</th>
-                <th>Azimuth resolution</th>
-                <th>Elevation resolution</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>TI mmWave IWR1843BOOST</th>
-                <td>20Hz</td>
-                <td>77GHz</td>
-                <td>FMCW</td>
-                <td>3</td>
-                <td>4</td>
-                <td>0.068m</td>
-                <td>13.92m</td>
-                <td>0.08m/s</td>
-                <td>2.56m/s</td>
-                <td>15&deg;</td>
-                <td>58&deg;</td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- table-container를 추가해서 가로 스크롤 가능하게 (화면 잘림 방지) -->
+          <div class="table-container">
+            <table class="table is-fullwidth is-bordered is-narrow">
+              <thead>
+                <tr>
+                  <th>Sensor Name</th>
+                  <th>Framerate</th>
+                  <th>Wave frequency</th>
+                  <th>Waveform</th>
+                  <th>TX antennas</th>
+                  <th>RX antennas</th>
+                  <th>Range resolution</th>
+                  <th>Max range</th>
+                  <th>Doppler velocity resolution</th>
+                  <th>Max Doppler velocity</th>
+                  <th>Azimuth resolution</th>
+                  <th>Elevation resolution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>TI mmWave IWR1843BOOST</th>
+                  <td>20&nbsp;Hz</td>
+                  <td>77&nbsp;GHz</td>
+                  <td>FMCW</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>0.068&nbsp;m</td>
+                  <td>13.92&nbsp;m</td>
+                  <td>0.08&nbsp;m/s</td>
+                  <td>2.56&nbsp;m/s</td>
+                  <td>15&deg;</td>
+                  <td>58&deg;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <!-- <p class="has-text-centered">Any additional sensor notes can go here.</p> -->
         </div>
       </div>
