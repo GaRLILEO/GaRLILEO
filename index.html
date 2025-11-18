@@ -327,7 +327,7 @@
                   <span>Video</span>
 
                 <span class="link-block">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSclh_0RjWgcMCLCKhtXhW3usy32m0DUbUBBx8lxGeNm0yZkeQ/viewform?usp=header" target="_blank"
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSclh_0RjWgcMCLCKhtXhW3usy32m0DUbUBBx8lxGeNm0yZkeQ/viewform?usp=sharing&ouid=105482975535171268535" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-database"></i>
@@ -373,7 +373,7 @@
              alt="Overall preview of GaRLILEO"
              style="max-width: 1100px; width: 100%; height: auto;" />
         <figcaption>
-          <h2 class="subtitle has-text-centered" style="margin-top: 0.75rem;">
+          <h2 class="subtitle" style="margin-top: 0.75rem; font-size: 0.9rem; text-align: left;">
             Overall preview of GaRLILEO. The four subfigures in the upper row present the problematic situations that
             quadrupedal robots may encounter while performing real-world tasks, while the yellow letters specify the
             situations and the red words explain the substantial issues generated from them. Two boxes in the left part
@@ -383,6 +383,7 @@
             sharp turns, and staircases.
           </h2>
         </figcaption>
+
       </figure>
     </div>
   </div>
@@ -635,7 +636,9 @@ robot odometry and SLAM.
           <p>
             The <strong>GaRLILEO Dataset</strong> contains diverse sequences captured by a legged robot equipped with a millimeter-wave radar, IMU, and leg kinematics sensors. 
             It spans indoor and outdoor environments with various elevation profiles, loop trajectories, and motion dynamics. 
-            Each sequence is provided with synchronized <code>ros2 bag</code> files, calibration data, and ground-truth maps/trajectories when available.
+            Each sequence is provided with synchronized <code>ros2 bag</code> files, calibration data, and ground-truth maps/trajectories when available. <br>
+            Our dataset is available via the following links:
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSclh_0RjWgcMCLCKhtXhW3usy32m0DUbUBBx8lxGeNm0yZkeQ/viewform?usp=sharing&ouid=105482975535171268535" target="_blank" class="has-text-link">Link</a>
           </p>
 
           <table class="table is-striped is-hoverable is-fullwidth">
@@ -646,10 +649,8 @@ robot odometry and SLAM.
                 <th>Elevation Change (m)</th>
                 <th>Duration (s)</th>
                 <th>Loops (#)</th>
-                <th>Rosbag</th>
                 <th>Calibration<br>(Extrinsics)</th>
                 <th>GT Map</th>
-                <th>GT Traj.</th>
               </tr>
             </thead>
             <tbody>
@@ -659,32 +660,26 @@ robot odometry and SLAM.
                 <td>-</td>
                 <td>124.50</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Atrium</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1VKYe9-S1R_GOacrqKighwLw9oTng-whb" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 2</td>
               </tr>
               <tr>
                 <td>BridgeLoop</td>
                 <td>161.17</td>
                 <td>1.72</td>
-                <td>187.20 </td>
+                <td>187.20</td>
                 <td>3</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">BridgeLoop</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1TneCNx5elKsFjf6a4tbpfdU0mtxpFEK1" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 3</td>
               </tr>
               <tr>
                 <td>CorriLoop</td>
                 <td>208.68</td>
                 <td>-</td>
-                <td>229.40 </td>
+                <td>229.40</td>
                 <td>2</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">CorriLoop</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1J_9OjlVKlwhxTtzMlS7YOL3WNXVXWoX1" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 4</td>
               </tr>
               <tr>
                 <td>BiCorridor</td>
@@ -692,21 +687,17 @@ robot odometry and SLAM.
                 <td>4.72</td>
                 <td>277.29</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">BiCorridor</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1J_9OjlVKlwhxTtzMlS7YOL3WNXVXWoX1" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 4</td>
               </tr>
               <tr>
                 <td>Downstair</td>
                 <td>233.75</td>
-                <td> 8.81</td>
+                <td>8.81</td>
                 <td>270.90</td>
                 <td>2</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Downstair</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1B9hNB5niBt_ctibwG_Npx26xJjmBLlIr" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 1</td>
               </tr>
               <tr>
                 <td>Upstair</td>
@@ -714,10 +705,8 @@ robot odometry and SLAM.
                 <td>9.37</td>
                 <td>227.89</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Upstair</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1TneCNx5elKsFjf6a4tbpfdU0mtxpFEK1" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 3</td>
               </tr>
               <tr>
                 <td>SlopeStair</td>
@@ -725,43 +714,35 @@ robot odometry and SLAM.
                 <td>10.06</td>
                 <td>307.49</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">SlopeStair</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1B9hNB5niBt_ctibwG_Npx26xJjmBLlIr" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 1</td>
               </tr>
               <tr>
                 <td>Overpass</td>
                 <td>169.17</td>
                 <td>7.23</td>
-                <td>213.49 </td>
+                <td>213.49</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Overpass</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1bJ4QONnlTYT2MGIw9tqKJs7sC3enXkiu" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 5</td>
               </tr>
               <tr>
                 <td>Tunnel</td>
                 <td>247.94</td>
                 <td>-</td>
-                <td>277.00 </td>
+                <td>277.00</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Tunnel</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1SHjPk2LuvE8nCNELfctfhCR7jrMUTBhs" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 7</td>
               </tr>
               <tr>
                 <td>Quad</td>
                 <td>447.83</td>
                 <td>10.72</td>
-                <td>503.69 </td>
+                <td>503.69</td>
                 <td>1</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">Quad</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1PE_2tBsEK8mZqpRcqodKPj_b-BlvZBDY" target="_blank" class="has-text-link">SNU System</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1I6dGsClb6DWUnUY-QM6jIboh7wPxih6D" target="_blank" class="has-text-link">link</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>SNU System</td>
+                <td>GT Map 6</td>
               </tr>
               <tr>
                 <td>MoCap-E</td>
@@ -769,10 +750,8 @@ robot odometry and SLAM.
                 <td>0.57</td>
                 <td>139.10</td>
                 <td>2</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">MoCap-E</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/11WZi5A1lv-EB-FgPzpMyTG3DrcmL83Fu" target="_blank" class="has-text-link">RAI System</a></td>
-                <td><a href="" target="_blank" class="has-text-link">-</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>RAI System</td>
+                <td>-</td>
               </tr>
               <tr>
                 <td>MoCap-H</td>
@@ -780,24 +759,12 @@ robot odometry and SLAM.
                 <td>0.60</td>
                 <td>79.46</td>
                 <td>2</td>
-                <td><a href="https://drive.google.com/drive/folders/1J16Yqh9sq3aKVR8bNCBJjdGUi_d9VcX7" target="_blank" class="has-text-link">MoCap-H</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/11WZi5A1lv-EB-FgPzpMyTG3DrcmL83Fu" target="_blank" class="has-text-link">RAI System</a></td>
-                <td><a href="" target="_blank" class="has-text-link">-</a></td>
-                <td><a href="https://drive.google.com/drive/u/1/folders/1MZyuWOWhQbVijSG4LGyvWuXgkB1VBSPW" target="_blank" class="has-text-link">link</a></td>
+                <td>RAI System</td>
+                <td>-</td>
               </tr>
             </tbody>
           </table>
 
-          <small>
-          Each TLS Map consists of several sequences: <br>
-          <strong>GT Map 1</strong> - Downstair, SlopeStair;
-          <strong>GT Map 2</strong> - Atrium;
-          <strong>GT Map 3</strong> - BridgeLoop, Upstair;
-          <strong>GT Map 4</strong> - CorriLoop, BiCorridor;
-          <strong>GT Map 5</strong> - Overpass;
-          <strong>GT Map 6</strong> - Quad;
-          <strong>GT Map 7</strong> - Tunnel
-          </small>
 
           <!-- <p class="has-text-centered">
             📂 The dataset and calibration files are available at  
