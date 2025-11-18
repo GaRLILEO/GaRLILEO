@@ -373,7 +373,12 @@
              alt="Overall preview of GaRLILEO"
              style="max-width: 1100px; width: 100%; height: auto;" />
         <figcaption>
-          <h2 class="subtitle" style="margin-top: 0.75rem; font-size: 0.9rem; text-align: left;">
+          <h2 class="subtitle" 
+              style="margin-top: 0.75rem; 
+                    font-size: 0.9rem; 
+                    text-align: left; 
+                    max-width: 75%; 
+                    line-height: 1.4;">
             Overall preview of GaRLILEO. The four subfigures in the upper row present the problematic situations that
             quadrupedal robots may encounter while performing real-world tasks, while the yellow letters specify the
             situations and the red words explain the substantial issues generated from them. Two boxes in the left part
@@ -645,125 +650,126 @@ robot odometry and SLAM.
             <thead>
               <tr>
                 <th>Sequence</th>
-                <th>Path Length (m)</th>
-                <th>Elevation Change (m)</th>
-                <th>Duration (s)</th>
-                <th>Loops (#)</th>
-                <th>Calibration<br>(Extrinsics)</th>
-                <th>GT Map</th>
+                <th class="has-text-centered">Path Length (m)</th>
+                <th class="has-text-centered">Elevation Change (m)</th>
+                <th class="has-text-centered">Duration (s)</th>
+                <th class="has-text-centered">Loops (#)</th>
+                <th class="has-text-centered">Calibration<br>(Extrinsics)</th>
+                <th class="has-text-centered">GT Map</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Atrium</td>
-                <td>109.93</td>
-                <td>-</td>
-                <td>124.50</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 2</td>
+                <td class="has-text-centered">109.93</td>
+                <td class="has-text-centered">-</td>
+                <td class="has-text-centered">124.50</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 2</td>
               </tr>
               <tr>
                 <td>BridgeLoop</td>
-                <td>161.17</td>
-                <td>1.72</td>
-                <td>187.20</td>
-                <td>3</td>
-                <td>SNU System</td>
-                <td>GT Map 3</td>
+                <td class="has-text-centered">161.17</td>
+                <td class="has-text-centered">1.72</td>
+                <td class="has-text-centered">187.20</td>
+                <td class="has-text-centered">3</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 3</td>
               </tr>
               <tr>
                 <td>CorriLoop</td>
-                <td>208.68</td>
-                <td>-</td>
-                <td>229.40</td>
-                <td>2</td>
-                <td>SNU System</td>
-                <td>GT Map 4</td>
+                <td class="has-text-centered">208.68</td>
+                <td class="has-text-centered">-</td>
+                <td class="has-text-centered">229.40</td>
+                <td class="has-text-centered">2</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 4</td>
               </tr>
               <tr>
                 <td>BiCorridor</td>
-                <td>240.82</td>
-                <td>4.72</td>
-                <td>277.29</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 4</td>
+                <td class="has-text-centered">240.82</td>
+                <td class="has-text-centered">4.72</td>
+                <td class="has-text-centered">277.29</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 4</td>
               </tr>
               <tr>
                 <td>Downstair</td>
-                <td>233.75</td>
-                <td>8.81</td>
-                <td>270.90</td>
-                <td>2</td>
-                <td>SNU System</td>
-                <td>GT Map 1</td>
+                <td class="has-text-centered">233.75</td>
+                <td class="has-text-centered">8.81</td>
+                <td class="has-text-centered">270.90</td>
+                <td class="has-text-centered">2</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 1</td>
               </tr>
               <tr>
                 <td>Upstair</td>
-                <td>197.22</td>
-                <td>9.37</td>
-                <td>227.89</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 3</td>
+                <td class="has-text-centered">197.22</td>
+                <td class="has-text-centered">9.37</td>
+                <td class="has-text-centered">227.89</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 3</td>
               </tr>
               <tr>
                 <td>SlopeStair</td>
-                <td>273.37</td>
-                <td>10.06</td>
-                <td>307.49</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 1</td>
+                <td class="has-text-centered">273.37</td>
+                <td class="has-text-centered">10.06</td>
+                <td class="has-text-centered">307.49</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 1</td>
               </tr>
               <tr>
                 <td>Overpass</td>
-                <td>169.17</td>
-                <td>7.23</td>
-                <td>213.49</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 5</td>
+                <td class="has-text-centered">169.17</td>
+                <td class="has-text-centered">7.23</td>
+                <td class="has-text-centered">213.49</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 5</td>
               </tr>
               <tr>
                 <td>Tunnel</td>
-                <td>247.94</td>
-                <td>-</td>
-                <td>277.00</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 7</td>
+                <td class="has-text-centered">247.94</td>
+                <td class="has-text-centered">-</td>
+                <td class="has-text-centered">277.00</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 7</td>
               </tr>
               <tr>
                 <td>Quad</td>
-                <td>447.83</td>
-                <td>10.72</td>
-                <td>503.69</td>
-                <td>1</td>
-                <td>SNU System</td>
-                <td>GT Map 6</td>
+                <td class="has-text-centered">447.83</td>
+                <td class="has-text-centered">10.72</td>
+                <td class="has-text-centered">503.69</td>
+                <td class="has-text-centered">1</td>
+                <td class="has-text-centered">SNU System</td>
+                <td class="has-text-centered">GT Map 6</td>
               </tr>
               <tr>
                 <td>MoCap-E</td>
-                <td>44.91</td>
-                <td>0.57</td>
-                <td>139.10</td>
-                <td>2</td>
-                <td>RAI System</td>
-                <td>-</td>
+                <td class="has-text-centered">44.91</td>
+                <td class="has-text-centered">0.57</td>
+                <td class="has-text-centered">139.10</td>
+                <td class="has-text-centered">2</td>
+                <td class="has-text-centered">RAI System</td>
+                <td class="has-text-centered">-</td>
               </tr>
               <tr>
                 <td>MoCap-H</td>
-                <td>42.48</td>
-                <td>0.60</td>
-                <td>79.46</td>
-                <td>2</td>
-                <td>RAI System</td>
-                <td>-</td>
+                <td class="has-text-centered">42.48</td>
+                <td class="has-text-centered">0.60</td>
+                <td class="has-text-centered">79.46</td>
+                <td class="has-text-centered">2</td>
+                <td class="has-text-centered">RAI System</td>
+                <td class="has-text-centered">-</td>
               </tr>
             </tbody>
           </table>
+
 
 
           <!-- <p class="has-text-centered">
