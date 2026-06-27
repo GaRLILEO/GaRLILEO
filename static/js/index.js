@@ -200,6 +200,22 @@ function setupReveal() {
   revealNodes.forEach((node) => observer.observe(node));
 }
 
+function revealHashTarget() {
+  const hash = window.location.hash.replace("#", "");
+  if (!hash) return;
+
+  const target = document.getElementById(decodeURIComponent(hash));
+  if (!target) return;
+
+  if (target.classList.contains("reveal")) {
+    target.classList.add("is-visible");
+  }
+
+  target.querySelectorAll(".reveal").forEach((node) => {
+    node.classList.add("is-visible");
+  });
+}
+
 document.addEventListener("click", (event) => {
   const container = document.querySelector(".more-works-container");
   if (container && !container.contains(event.target)) {
@@ -215,10 +231,12 @@ document.addEventListener("keydown", (event) => {
 
 window.addEventListener("scroll", updateScrollState);
 window.addEventListener("resize", updateScrollState);
+window.addEventListener("hashchange", revealHashTarget);
 
 document.addEventListener("DOMContentLoaded", () => {
   updateScrollState();
   setupReveal();
+  revealHashTarget();
   setupCarousel();
   setupSequenceVideos();
 
